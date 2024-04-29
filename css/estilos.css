@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background: rgba(0,0,0, 1);
+    z-index: 2;
+}
+
+.cabecalho-logo img{
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+
+.cabecalho-item{
+    display: flex;
+    gap: 40px;
+    margin-right: 40px;
+}
+
+
+#inicio{
+    padding-top: 70px;
+    height: 550px;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid blue;
+}
+
+#inicio video{
+    z-index: -1;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    opacity: 0.7;
+}
+
+#sobre-mim{
+    height:500px;
+    background-color: #474747;
+}
+
+#meus-projetos{
+    height: 500px;
+}
+
+#contato{
+    height:500px;  
+    background-color: #474747;
+}
+
+#sobre-a-fatec{
+    height:500px;  
+    border: 1px solid green;
+}
+
+footer{
+    text-align: center;
+}
