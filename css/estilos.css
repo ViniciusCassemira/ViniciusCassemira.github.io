@@ -16,7 +16,7 @@ body{
     height: 70px;
     width: 100%;
     position: fixed;
-    background: rgba(0,0,0, 1);
+    background: rgb(0, 0, 0);
     z-index: 2;
 }
 
@@ -35,11 +35,17 @@ body{
 
 #inicio{
     padding-top: 70px;
-    height: 550px;
+    height: 700px;
     width: auto;
     position: relative;
     overflow: hidden;
-    border: 1px solid blue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: purple;
+    font-size: 30px;
 }
 
 #inicio video{
@@ -47,28 +53,26 @@ body{
     position: absolute;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
-    opacity: 0.7;
+    width: 1px;
+    opacity: 0.6;
 }
 
 #sobre-mim{
-    height:500px;
+    height:600px;
     background-color: #474747;
 }
 
 #meus-projetos{
-    height: 500px;
+    height: 600px;
 }
 
 #contato{
-    height:500px;  
+    height:400px;  
     background-color: #474747;
 }
 
 #sobre-a-fatec{
-    height:500px;  
-    border: 1px solid green;
+    height:600px;  
 }
 
 footer{
