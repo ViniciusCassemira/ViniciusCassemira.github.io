@@ -13,10 +13,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 65px;
     width: 100%;
     position: fixed;
-    background: rgb(0, 0, 0);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(24,24,24,1) 50%, rgba(38,38,38,1) 100%);
     z-index: 2;
 }
 
@@ -34,7 +35,7 @@ body{
 
 
 #inicio{
-    padding-top: 70px;
+    padding-top: 65px;
     height: 700px;
     width: auto;
     position: relative;
@@ -60,10 +61,26 @@ body{
 #sobre-mim{
     height:600px;
     background-color: #474747;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sobre-mim-texto{
+    border: 1px solid purple;
+    width: 500px;
+    height: max-content;
+}
+.sobre-mim-foto{
+    height: 300px;
 }
 
 #meus-projetos{
     height: 600px;
+}
+.meus-projetos-subtitulo{
+    text-align: center;
+    margin: 2%;
 }
 
 #contato{
