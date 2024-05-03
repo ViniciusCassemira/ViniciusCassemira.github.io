@@ -89,7 +89,13 @@ body{
 }
 
 #sobre-a-fatec{
-    height:600px;  
+    height:600px;
+    display: flex;  
+}
+
+#sobre-a-fatec section{
+    padding: 10px;
+    width: 50%;
 }
 
 footer{
