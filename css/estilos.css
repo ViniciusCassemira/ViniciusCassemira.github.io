@@ -82,6 +82,13 @@ body{
     text-align: center;
     margin: 2%;
 }
+.meus-projetos-grupo{
+    display: flex;
+    gap:10px;
+    justify-content: space-around;
+    align-items: center;
+    background: green;
+}
 
 #contato{
     height:400px;  
