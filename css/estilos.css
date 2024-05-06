@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 
 body{
     background-color: black;
@@ -33,7 +36,6 @@ body{
     margin-right: 40px;
 }
 
-
 #inicio{
     padding-top: 65px;
     height: 700px;
@@ -47,6 +49,8 @@ body{
     align-items: center;
     color: purple;
     font-size: 30px;
+
+    border: 1px solid red;
 }
 
 #inicio video{
@@ -55,7 +59,7 @@ body{
     min-width: 100%;
     min-height: 100%;
     width: 1px;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 #sobre-mim{
@@ -64,6 +68,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid purple;
 }
 
 .sobre-mim-texto{
@@ -77,6 +82,7 @@ body{
 
 #meus-projetos{
     height: 600px;
+    border: 1px solid red;
 }
 .meus-projetos-subtitulo{
     text-align: center;
@@ -93,11 +99,30 @@ body{
 #contato{
     height:400px;  
     background-color: #474747;
+    border: 1px solid purple;
+}
+#contato h2{
+    text-align: center;
+}
+
+#contato-grupo{
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    border: 1px solid red;
+}
+#contato div{
+    background-color: rgba(180, 180, 180, 0.274);
+    border-radius: 8px;
+    text-align:center;
 }
 
 #sobre-a-fatec{
     height:600px;
-    display: flex;  
+    display: flex;
+    border: 1px solid red;
 }
 
 #sobre-a-fatec section{
