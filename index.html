@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta viewport="name" content="widht=device-widht, initial-scale=1.0">
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/animacoes.css">
         <link rel="shortcut icon" href="assets/img/favicon.ico">
         <title>portfólio</title>
     </head>
@@ -21,12 +22,14 @@
         
         <main>
             <article id="inicio">
-                <video autoplay loop muted>
+                <video id="video-inicio" autoplay loop muted>
                     <source src="assets/video/matrixfundo.mp4" type="video/mp4">
                 </video>
+      
                 <p>Seja bem vindo</p>
                 <p>Ao meu</p>
-                <p>Portfólio</p>
+                <p>Portfólio <span>_</span></p>
+       
             </article>
             <article id="sobre-mim">
                 <h2 id="sobre-mim-subtitulo">Um pouco sobre mim</h2>
@@ -41,6 +44,11 @@
 
             </article>
             <article id="meus-projetos">
+
+                <video id="video-meus-projetos" autoplay loop muted>
+                    <source src="assets/video/matrixfundo2.mp4" type="video/mp4">
+                </video>
+
                 <h2 class="meus-projetos-subtitulo">Alguns dos meus projetos</h2>
 
                 <section class="meus-projetos-grupo">
@@ -52,11 +60,11 @@
 
                     <div class="meus-projetos-projeto">
                         <img id="projeto-imagem2" src="assets/img/calculadoraPython.PNG" alt="Imagem do projeto">
-                        <h3>Calculadora de Cateto e Hipotenusa em Py</h3>
+                        <h3>Calculadora de Cateto e Hipotenusa em Python</h3>
                         <a href="https://github.com/ViniciusCassemira/CalculadoraHipotenusaCateto">Confira</a>
                     </div>
 
-                    <div>
+                    <div  class="meus-projetos-projeto">
                         <img id="projeto-imagem3" src="assets/img/jogoVelha.png" alt="Imagem do projeto">
                         <h3>Jogo da velha no VisualG</h3>
                         <a href="https://github.com/ViniciusCassemira/Algoritmos/blob/master/MATRIZ_JOGO_DA_VELHA.ALG">Confira</a>
@@ -85,21 +93,23 @@
                 </section>
             </article>
             <article id="sobre-a-fatec">
+                <h2>Algumas Informações</h2>
                 
-                <section>
+                <section id="sobre-a-fatec-grupo">
+                    <div>
                     <h2>Sobre a Fatec</h2>
                     <p>
-                        A <srong>Faculdade de Tecnologia de Jahu</srong> - FATEC-JAHU é uma Instituição Pública de Ensino Superior que oferece cursos de graduação para formação de Tecnólogos, visando atender segmentos atuais e emergentes da atividade econômica.
+                        A <srong class="strong-verde">Faculdade de Tecnologia de Jahu</srong> - FATEC-JAHU é uma Instituição Pública de Ensino Superior que oferece cursos de graduação para formação de Tecnólogos, visando atender segmentos atuais e emergentes da atividade econômica.
                     </p>
 
                     <p>
-                        <strong>Missão:</strong>Promover a formação de cidadãos e profissionais altamente qualificados capazes de desenvolver a sociedade em todos os seus aspectos.
+                        <strong class="strong-verde">Missão:</strong>Promover a formação de cidadãos e profissionais altamente qualificados capazes de desenvolver a sociedade em todos os seus aspectos.
                     </p>
                     <p>
-                        <strong>Visão:</strong> Através do ensino, pesquisa e extensão, ser reconhecida pela comunidade científica e sociedade em geral, como um Centro de referência Tecnológica.
+                        <strong class="strong-verde">Visão:</strong> Através do ensino, pesquisa e extensão, ser reconhecida pela comunidade científica e sociedade em geral, como um Centro de referência Tecnológica.
                     </p>
                     <p>
-                        <strong>Valores:</strong> Contribuir na formação de cidadãos e profissionais que tenham consciência ética,  competência, responsabilidade e compromisso social.
+                        <strong class="strong-verde">Valores:</strong> Contribuir na formação de cidadãos e profissionais que tenham consciência ética,  competência, responsabilidade e compromisso social.
                     </p>
 
                     <p>
@@ -107,17 +117,19 @@
                     </p>
 
                     <p>
-                        Contatos:
-                        Email: f020dir@cps.sp.gov.br
-                        Tel: (14) 3622-8280 / 3622-8037 / 3621-9044
+                        <strong class="strong-verde">Contatos:</strong>
+                        <strong class="strong-roxo">Email:</strong> f020dir@cps.sp.gov.br
+                        <strong class="strong-roxo">Tel:</strong> (14) 3622-8280 / 3622-8037 / 3621-9044
                     </p>
-                </section>
-                <section>
+                    </div>
+
+                    <div>
                     <h2>Sobre o curso</h2> 
 
                     <p>
-                        O graduado do Curso Superior de Desenvolvimento de Software Multiplataforma é um profissional capacitado para projetar, desenvolver e testar software voltado para diversas plataformas, incluindo aplicações na Nuvem e dispositivos da Internet das Coisas. Ele utiliza uma variedade de conceitos, métodos e tecnologias, abrangendo Linguagens de Programação, Banco de Dados, Engenharia de Software, Segurança da Informação e Inteligência Artificial, com o intuito de propor soluções tecnológicas inovadoras. Além disso, possui habilidades para realizar análises estatísticas de dados que subsidiam a tomada de decisões. Também é apto a coordenar tanto projetos quanto equipes de desenvolvimento de software.
+                        O graduado do Curso Superior de <strong>Desenvolvimento de Software Multiplataforma</strong> é um profissional capacitado para projetar, desenvolver e testar software voltado para diversas plataformas, incluindo aplicações na Nuvem e dispositivos da Internet das Coisas. Ele utiliza uma variedade de conceitos, métodos e tecnologias, abrangendo Linguagens de Programação, Banco de Dados, Engenharia de Software, Segurança da Informação e Inteligência Artificial, com o intuito de propor soluções tecnológicas inovadoras. Além disso, possui habilidades para realizar análises estatísticas de dados que subsidiam a tomada de decisões. Também é apto a coordenar tanto projetos quanto equipes de desenvolvimento de software.
                     </p>
+                    </div>
                 </section>
 
             </article>

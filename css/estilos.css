@@ -7,6 +7,20 @@ a{
     text-decoration: none;
 }
 
+@font-face{
+    font-family: 'Raster';
+    src: url(/assets/fontes/raster.ttf);
+
+}
+@font-face{
+    font-family: 'segoe ui';
+    src: url(/assets/fontes/Segoe\ UI.ttf);
+}
+@font-face{
+    font-family: 'segoe ui bold';
+    src: url(/assets/fontes/Segoe\ UI\ Bold.ttf);
+}
+
 body{
     background-color: black;
     color: white;
@@ -53,13 +67,25 @@ body{
     border: 1px solid red;
 }
 
-#inicio video{
+#video-inicio{
     z-index: -1;
     position: absolute;
     min-width: 100%;
     min-height: 100%;
     width: 1px;
-    opacity: 0.4;
+    opacity: 0.7;
+}
+
+#inicio p{
+    font-family: segoe ui bold;
+}
+
+#inicio span{
+    font-size: 40px;
+    animation-name: pulsar;
+    animation-duration:1.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 #sobre-mim{
@@ -91,6 +117,8 @@ body{
 .sobre-mim-conteudo p{
     width: 500px;
     height: max-content;
+    font-family: Raster;
+    font-size: 18px;
 }
 .sobre-mim-foto{
     height: 350px;
@@ -106,7 +134,26 @@ body{
     flex-direction: column;
     justify-content: center;
     gap:8%;
+
+    /*video*/
+    position: relative;
+    overflow: hidden;
+    width: auto;
+
 }
+#video-meus-projetos{
+    z-index: -1;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: 1px;
+    opacity: 0.2;
+
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+}
+
 .meus-projetos-subtitulo{
     text-align: center;
     border: 1px solid red;
@@ -117,7 +164,40 @@ body{
     gap:10px;
     justify-content: space-around;
     align-items: center;
-    background: rgb(86, 90, 86);
+    /* background: rgb(86, 90, 86); */
+}
+.meus-projetos-projeto{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 4px;
+    background-color: rgb(75, 75, 75);
+    text-align: center;
+
+    scale: 1.0;
+    transition: 0.5s;
+}
+
+.meus-projetos-projeto:hover{
+    scale: 1.02;
+    transition: 0.5s;
+}
+
+.meus-projetos-projeto img{
+    height:230px;
+}
+
+.meus-projetos-projeto h3{
+    border: 1px solid red;
+    margin: 10px;
+}
+
+.meus-projetos-projeto a{
+    font-family: Raster;
+    color: red;
+    border: 1px solid red;
+    border-radius: 6px;
+    background-color: gray;
+    padding: 4px 10px;
 }
 
 #projeto-imagem1, #projeto-imagem2, #projeto-imagem3{
@@ -127,7 +207,8 @@ body{
 }
 
 #contato{
-    height:500px;  
+    height:500px; 
+    background-color: white;
     border: 1px solid rgb(0, 17, 255);
     display: flex;
     flex-direction: column;
@@ -148,31 +229,56 @@ body{
 }
 
 #contato div{
-    background-color: rgb(218, 217, 217);
+    background-color: rgba(209, 209, 209, 0.76);
     border-radius: 10px;
-    border: 2px solid purple;
+    border: 2px solid rgb(116, 116, 116);
     text-align:center;
+
+    scale: 1.00;
+    transition: 0.5s;
+}
+#contato div:hover{
+    scale: 1.05;
+    transition: 0.5s;
 }
 
 #sobre-a-fatec{
     height:600px;
     display: flex;
+    flex-direction: column;
     border: 1px solid red;
     align-items: center;
+    justify-content: center;
+    gap: 8%;    
 }
+
 #sobre-a-fatec h1{
     text-align: center;
 }
-#sobre-a-fatec section{
+#sobre-a-fatec-grupo{
+    display: flex;
+    align-items: center;
+}
+#sobre-a-fatec div{
     padding: 10px;
     width: 50%;
+    font-family: Raster;
+    font-size: 18px;
+    height: max-content;
+
     background-color: rgba(196, 196, 196, 0.151);
     border: 2px solid green;
-    border-radius: 30px 10px;
-    margin: 10px;
+    border-radius: 10px 30px;
+    margin: 15px;
 }
-#sobre-a-fatec strong{
+#sobre-a-fatec p{
+    margin: 8px;
+}
+.strong-verde{
     color: green;
+}
+.strong-roxo{
+    color: purple;
 }
 #sobre-a-fatec h2{
     padding-left: 10px;
