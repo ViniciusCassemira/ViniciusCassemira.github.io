@@ -47,7 +47,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: purple;
+    color: rgb(0, 128, 0);
     font-size: 30px;
 
     border: 1px solid red;
@@ -64,58 +64,93 @@ body{
 
 #sobre-mim{
     height:600px;
-    background-color: #474747;
+    border: 1px solid rgb(7, 31, 255);
+
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid purple;
+    flex-direction: column;
+    justify-content: center;
+    gap:8%;
+   
+}
+#sobre-mim-subtitulo{
+    color: purple;
+    border: 1px solid red;
+    text-align: center;
 }
 
-.sobre-mim-texto{
-    border: 1px solid purple;
+.sobre-mim-conteudo{
+    width: 100%;
+    border: 1px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.sobre-mim-conteudo p{
     width: 500px;
     height: max-content;
 }
 .sobre-mim-foto{
-    height: 300px;
+    height: 350px;
+    border: 2px solid purple;
+    border-radius: 6px;
 }
 
 #meus-projetos{
     height: 600px;
     border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:8%;
 }
 .meus-projetos-subtitulo{
     text-align: center;
-    margin: 2%;
+    border: 1px solid red;
+    color: green;
 }
 .meus-projetos-grupo{
     display: flex;
     gap:10px;
     justify-content: space-around;
     align-items: center;
-    background: green;
+    background: rgb(86, 90, 86);
+}
+
+#projeto-imagem1, #projeto-imagem2, #projeto-imagem3{
+    width: 400px;
+    border: 2px solid green;
+    border-radius: 8px;
 }
 
 #contato{
-    height:400px;  
-    background-color: #474747;
-    border: 1px solid purple;
+    height:500px;  
+    border: 1px solid rgb(0, 17, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8%;
 }
 #contato h2{
     text-align: center;
+    border: 1px solid yellow;
+    color: purple;
 }
 
 #contato-grupo{
-    height: 350px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
     border: 1px solid red;
 }
+
 #contato div{
-    background-color: rgba(180, 180, 180, 0.274);
-    border-radius: 8px;
+    background-color: rgb(218, 217, 217);
+    border-radius: 10px;
+    border: 2px solid purple;
     text-align:center;
 }
 
@@ -123,12 +158,30 @@ body{
     height:600px;
     display: flex;
     border: 1px solid red;
+    align-items: center;
+}
+
+#sobre-a-fatec h1{
+    text-align: center;
 }
 
 #sobre-a-fatec section{
     padding: 10px;
     width: 50%;
+    background-color: rgba(196, 196, 196, 0.151);
+    border: 2px solid green;
+    border-radius: 30px 10px;
+    margin: 10px;
 }
+#sobre-a-fatec strong{
+    color: green;
+}
+#sobre-a-fatec h2{
+    padding-left: 10px;
+    color: green;
+    margin-bottom: 10px;
+}
+
 
 footer{
     text-align: center;
