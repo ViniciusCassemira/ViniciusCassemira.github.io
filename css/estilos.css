@@ -75,7 +75,7 @@ body{
     color: rgb(0, 128, 0);
     font-size: 30px;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #video-inicio{
@@ -104,7 +104,7 @@ body{
 
 #sobre-mim{
     height:700px;
-    border: 1px solid rgb(7, 31, 255);
+    /* border: 1px solid rgb(7, 31, 255); */
 
     display: flex;
     flex-direction: column;
@@ -113,13 +113,13 @@ body{
 }
 #sobre-mim-subtitulo{
     color: purple;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
 }
 
 .sobre-mim-conteudo{
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     display: flex;
     justify-content: center;
@@ -141,7 +141,7 @@ body{
 
 #meus-projetos{
     height: 700px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     display: flex;
     flex-direction: column;
@@ -169,7 +169,7 @@ body{
 
 .meus-projetos-subtitulo{
     text-align: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: green;
 }
 .meus-projetos-grupo{
@@ -180,7 +180,7 @@ body{
     /* background: rgb(86, 90, 86); */
 }
 .meus-projetos-projeto{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 8px;
     padding: 4px;
     background-color: rgb(75, 75, 75);
@@ -200,7 +200,7 @@ body{
 }
 
 .meus-projetos-projeto h3{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 10px;
 }
 
@@ -213,7 +213,7 @@ body{
 .meus-projetos-projeto a{
     font-family: Raster;
     color: red;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 6px;
     background-color: gray;
     padding: 4px 10px;
@@ -228,7 +228,7 @@ body{
 #contato{
     height:600px; 
     background-color: white;
-    border: 1px solid rgb(0, 17, 255);
+    /* border: 1px solid rgb(0, 17, 255); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,7 +236,7 @@ body{
 }
 #contato h2{
     text-align: center;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     color: purple;
 }
 
@@ -244,7 +244,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #contato div{
@@ -265,7 +265,7 @@ body{
     height:700px;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     align-items: center;
     justify-content: center;
     gap: 8%;    
