@@ -33,6 +33,7 @@ body{
     height: 65px;
     width: 100%;
     position: fixed;
+
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(24,24,24,1) 50%, rgba(38,38,38,1) 100%);
     z-index: 2;
@@ -84,7 +85,7 @@ body{
     min-width: 100%;
     min-height: 100%;
     width: 1px;
-    opacity: 0.2;
+    opacity: 0.4;
     scale: 1.2; /*aumentar o tamanho do vídeo*/
     margin-left: 15%; /*centralizar um pouco o video*/
     margin-top:5%;/*centralizar um pouco o vídeo*/
@@ -135,7 +136,7 @@ body{
 }
 .sobre-mim-foto{
     height: 350px;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     border-radius: 6px;
 }
 
@@ -148,11 +149,9 @@ body{
     justify-content: center;
     gap:8%;
 
-
-    background: rgb(83,31,126);
-    background: linear-gradient(98deg, rgba(83,31,126,1) 0%, rgba(64,51,106,0.80015756302521) 33%, rgba(42,89,77,1) 66%, rgba(12,103,28,1) 100%);
-    background-size: 500% 100%;
-
+    background: #0db31c;
+    background: linear-gradient(90deg, #0db31c 0%, #506194 50%, #9c16f7 100%);
+    background-size: 300% 100%;
     animation-name: fundo;
     animation-duration: 6s;
     animation-iteration-count: infinite;
