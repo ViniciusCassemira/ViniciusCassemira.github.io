@@ -148,13 +148,24 @@ body{
     justify-content: center;
     gap:8%;
 
+
+    background: rgb(83,31,126);
+    background: linear-gradient(98deg, rgba(83,31,126,1) 0%, rgba(64,51,106,0.80015756302521) 33%, rgba(42,89,77,1) 66%, rgba(12,103,28,1) 100%);
+    background-size: 500% 100%;
+
+    animation-name: fundo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
     /*video*/
-    position: relative;
+    /* position: relative;
     overflow: hidden;
-    width: auto;
+    width: auto; */
 
 }
-#video-meus-projetos{
+/* #video-meus-projetos{
     z-index: -1;
     position: absolute;
     min-width: 100%;
@@ -165,7 +176,7 @@ body{
     filter: blur(1px);
     -webkit-filter: blur(1px);
     -moz-filter: blur(1px);
-}
+} */
 
 .meus-projetos-subtitulo{
     text-align: center;
