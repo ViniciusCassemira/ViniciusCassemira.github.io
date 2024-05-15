@@ -75,7 +75,7 @@ body{
     color: rgb(0, 128, 0);
     font-size: 30px;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #video-inicio{
@@ -84,7 +84,7 @@ body{
     min-width: 100%;
     min-height: 100%;
     width: 1px;
-    opacity: 0.7;
+    opacity: 0.2;
     scale: 1.2; /*aumentar o tamanho do vídeo*/
     margin-left: 15%; /*centralizar um pouco o video*/
     margin-top:5%;/*centralizar um pouco o vídeo*/
@@ -104,7 +104,7 @@ body{
 
 #sobre-mim{
     height:700px;
-    border: 1px solid rgb(7, 31, 255);
+    /* border: 1px solid rgb(7, 31, 255); */
 
     display: flex;
     flex-direction: column;
@@ -113,13 +113,13 @@ body{
 }
 #sobre-mim-subtitulo{
     color: purple;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
 }
 
 .sobre-mim-conteudo{
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     display: flex;
     justify-content: center;
@@ -141,20 +141,31 @@ body{
 
 #meus-projetos{
     height: 700px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap:8%;
 
+
+    background: rgb(83,31,126);
+    background: linear-gradient(98deg, rgba(83,31,126,1) 0%, rgba(64,51,106,0.80015756302521) 33%, rgba(42,89,77,1) 66%, rgba(12,103,28,1) 100%);
+    background-size: 500% 100%;
+
+    animation-name: fundo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
     /*video*/
-    position: relative;
+    /* position: relative;
     overflow: hidden;
-    width: auto;
+    width: auto; */
 
 }
-#video-meus-projetos{
+/* #video-meus-projetos{
     z-index: -1;
     position: absolute;
     min-width: 100%;
@@ -165,12 +176,12 @@ body{
     filter: blur(1px);
     -webkit-filter: blur(1px);
     -moz-filter: blur(1px);
-}
+} */
 
 .meus-projetos-subtitulo{
     text-align: center;
-    border: 1px solid red;
-    color: green;
+    /* border: 1px solid red; */
+    color: purple;
 }
 .meus-projetos-grupo{
     display: flex;
@@ -200,20 +211,19 @@ body{
 }
 
 .meus-projetos-projeto h3{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 10px;
 }
 
 .meus-projetos-projeto div{
     width: 100%;
-    background-color: green;
-    padding: 0;
+    padding: 10;
 }
 
 .meus-projetos-projeto a{
     font-family: Raster;
-    color: red;
-    border: 1px solid red;
+    color: purple;
+    /* border: 1px solid red; */
     border-radius: 6px;
     background-color: gray;
     padding: 4px 10px;
@@ -221,14 +231,14 @@ body{
 
 #projeto-imagem1, #projeto-imagem2, #projeto-imagem3{
     width: 400px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     border-radius: 8px;
 }
 
 #contato{
     height:600px; 
     background-color: white;
-    border: 1px solid rgb(0, 17, 255);
+    /* border: 1px solid rgb(0, 17, 255); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,15 +246,16 @@ body{
 }
 #contato h2{
     text-align: center;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     color: purple;
 }
 
 #contato-grupo{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    gap: 14%;
+    /* border: 1px solid red; */
 }
 
 #contato div{
@@ -265,7 +276,7 @@ body{
     height:700px;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     align-items: center;
     justify-content: center;
     gap: 8%;    
