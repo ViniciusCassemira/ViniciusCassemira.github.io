@@ -34,6 +34,9 @@ body{
     width: 100%;
     position: fixed;
 
+    font-family: raster;
+    font-size: 18px;
+
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(24,24,24,1) 50%, rgba(38,38,38,1) 100%);
     z-index: 2;
@@ -51,17 +54,14 @@ body{
 }
 .cabecalho-item a{
     /* font-family: segoe ui bold; */
-    font-family: raster;
-    font-size: 18px;
     color: white;
     padding: 1px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .cabecalho-item a:hover{
     /* font-family: segoe ui bold; */
-    font-family: raster;
     color: purple;
-    transition: 0.3s;
+    transition: 0.2s;
     border-bottom: 1px solid purple;
     padding: 1px;
 }
@@ -78,7 +78,9 @@ body{
     justify-content: center;
     align-items: center;
     color: rgb(0, 128, 0);
-    font-size: 30px;
+
+    font-family: raster;
+    font-size: 35px;
 
     /* border: 1px solid red; */
 }
@@ -93,10 +95,6 @@ body{
     scale: 1.2; /*aumentar o tamanho do vídeo*/
     margin-left: 15%; /*centralizar um pouco o video*/
     margin-top:5%;/*centralizar um pouco o vídeo*/
-}
-
-#inicio p{
-    font-family: segoe ui bold;
 }
 
 #inicio span{
@@ -116,7 +114,8 @@ body{
 }
 #sobre-mim-subtitulo{
     color: purple;
-    /* border: 1px solid red; */
+    font-family: raster;
+    font-size: 27px;
     text-align: center;
 }
 
@@ -134,7 +133,7 @@ body{
     width: 500px;
     height: max-content;
     font-family: Raster;
-    font-size: 18px;
+    font-size: 20px;
 }
 .sobre-mim-foto{
     height: 350px;
@@ -183,21 +182,23 @@ body{
 
 .meus-projetos-subtitulo{
     text-align: center;
-    /* border: 1px solid red; */
     color: purple;
+
+    font-family: raster;
+    font-size: 27px;
 }
 .meus-projetos-grupo{
     display: flex;
-    gap:10px;
-    justify-content: space-around;
+    gap:20px;
+    justify-content: center;
     align-items: center;
     /* background: rgb(86, 90, 86); */
 }
 .meus-projetos-projeto{
     border: 1px solid white;
     border-radius: 8px;
-    padding: 0px;
-    background-color: rgb(75, 75, 75);
+    padding: 0 0 10px 0 ;
+    background-color:rgba(209, 209, 209, 0.76);
     text-align: center;
     font-family: raster;
 
@@ -210,27 +211,19 @@ body{
     transition: 0.5s;
 }
 
-.meus-projetos-projeto img{
-    height:230px;
-}
-
 .meus-projetos-projeto h3{
     /* border: 1px solid red; */
     margin: 10px;
 }
 
-.meus-projetos-projeto div{
-    width: 100%;
-    padding: 10;
-}
-
 .meus-projetos-projeto a{
     font-family: Raster;
     color: purple;
-    /* border: 1px solid red; */
-    border-radius: 6px;
-    background-color: gray;
-    padding: 4px 10px;
+    border: 2px solid rgb(116, 116, 116);
+    background-color: rgb(196, 196, 196);
+    padding: 1px 30px;
+    border-radius: 4px;
+
 }
 
 #projeto-imagem1, #projeto-imagem2, #projeto-imagem3{
@@ -250,8 +243,10 @@ body{
 }
 #contato h2{
     text-align: center;
-    /* border: 1px solid yellow; */
     color: purple;
+
+    font-family: raster;
+    font-size: 27px;
 }
 
 #contato-grupo{
@@ -287,14 +282,16 @@ body{
     height:700px;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
     align-items: center;
     justify-content: center;
     gap: 8%;    
 }
 
-#sobre-a-fatec h1{
+#sobre-a-fatec h2{
     text-align: center;
+    font-family: Raster;
+    font-size: 27px;
+    color: green;
 }
 #sobre-a-fatec-grupo{
     display: flex;
@@ -303,8 +300,6 @@ body{
 #sobre-a-fatec div{
     padding: 10px;
     width: 50%;
-    font-family: Raster;
-    font-size: 18px;
     height: max-content;
 
     /* background-color: rgba(196, 196, 196, 0.151); */
@@ -315,6 +310,8 @@ body{
 }
 #sobre-a-fatec p{
     margin: 8px;
+    font-family: Raster;
+    font-size: 18px;
 }
 .strong-verde{
     color: green;
@@ -322,10 +319,12 @@ body{
 .strong-roxo{
     color: purple;
 }
-#sobre-a-fatec h2{
+#sobre-a-fatec h3{
     padding-left: 10px;
     color: green;
     margin-bottom: 10px;
+    font-family: Raster;
+    font-size: 24px;
 }
 
 article h2{
