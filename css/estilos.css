@@ -50,12 +50,16 @@ body{
     margin-right: 40px;
 }
 .cabecalho-item a{
-    font-family: segoe ui bold;
+    /* font-family: segoe ui bold; */
+    font-family: raster;
+    font-size: 18px;
     color: white;
     padding: 1px;
+    transition: 0.3s;
 }
 .cabecalho-item a:hover{
-    font-family: segoe ui bold;
+    /* font-family: segoe ui bold; */
+    font-family: raster;
     color: purple;
     transition: 0.3s;
     border-bottom: 1px solid purple;
@@ -105,8 +109,6 @@ body{
 
 #sobre-mim{
     height:700px;
-    /* border: 1px solid rgb(7, 31, 255); */
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,14 +151,16 @@ body{
     justify-content: center;
     gap:8%;
 
-    background: #0db31c;
-    background: linear-gradient(90deg, #0db31c 0%, #506194 50%, #9c16f7 100%);
-    background-size: 300% 100%;
+    background-color: #651992;
+    background: linear-gradient(45deg, #66199273 0%, #323da159 46%, #1182266b 100%);
+
+    background-size: 400% 100%;
     animation-name: fundo;
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
+
 
     /*video*/
     /* position: relative;
@@ -192,9 +196,10 @@ body{
 .meus-projetos-projeto{
     border: 1px solid white;
     border-radius: 8px;
-    padding: 4px;
+    padding: 0px;
     background-color: rgb(75, 75, 75);
     text-align: center;
+    font-family: raster;
 
     scale: 1.0;
     transition: 0.5s;
@@ -256,6 +261,13 @@ body{
     gap: 14%;
     /* border: 1px solid red; */
 }
+#contato-grupo p{
+    font-family: raster;
+    font-size: 16px;
+    margin: 2px;
+    color: purple;
+}
+
 
 #contato div{
     background-color: rgba(209, 209, 209, 0.76);
@@ -264,11 +276,11 @@ body{
     text-align:center;
 
     scale: 1.00;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 #contato div:hover{
-    scale: 1.05;
-    transition: 0.5s;
+    scale: 1.04;
+    transition: 0.3s;
 }
 
 #sobre-a-fatec{
@@ -295,7 +307,8 @@ body{
     font-size: 18px;
     height: max-content;
 
-    background-color: rgba(196, 196, 196, 0.151);
+    /* background-color: rgba(196, 196, 196, 0.151); */
+    background-color: rgb(18, 18, 18);
     border: 2px solid green;
     border-radius: 10px 30px;
     margin: 15px;
