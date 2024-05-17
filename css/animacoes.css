@@ -1,21 +1,19 @@
-@keyframes pulsar {
-    0%{
-        opacity: 1;
+@keyframes pulsar{
+    
+    from{
+        border-right-color:green;
     }
-    50%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
+    to{
+        border-right-color: transparent;
     }
 }
 
-@keyframes fundo {
-    0%{
-        background-position-x: 0%;
+@keyframes escrita{
+    from{
+        width: 0;
     }
 
-    100%{
-        background-position-x: 100%;
+    to{
+        width: 230px;
     }
 }

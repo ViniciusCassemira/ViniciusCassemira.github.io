@@ -85,24 +85,26 @@ body{
     /* border: 1px solid red; */
 }
 
+#inicio-texto{
+    border-right: 2px solid green;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    animation: pulsar 0.8s steps(26) infinite normal, escrita 2.1s steps(26) 1s normal;
+}
+
+
+
 #video-inicio{
     z-index: -1;
     position: absolute;
     min-width: 100%;
     min-height: 100%;
     width: 1px;
-    opacity: 0.4;
+    opacity: .3;
     scale: 1.2; /*aumentar o tamanho do vídeo*/
     margin-left: 15%; /*centralizar um pouco o video*/
     margin-top:5%;/*centralizar um pouco o vídeo*/
-}
-
-#inicio span{
-    font-size: 40px;
-    animation-name: pulsar;
-    animation-duration:1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
 #sobre-mim{
