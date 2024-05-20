@@ -1,19 +1,53 @@
 @keyframes pulsar{
     
-    from{
-        border-right-color:green;
-    }
-    to{
-        border-right-color: transparent;
+    50%{
+        border-color: transparent;
     }
 }
 
-@keyframes escrita{
-    from{
+@keyframes escrita1{
+    0%{
         width: 0;
     }
 
-    to{
+    99.9%{
+        border-right: 2px solid green ;
+    }
+    100%{
+        border: none;
         width: 230px;
+    }
+}
+
+@keyframes escrita2{
+    0%{
+        width: 0;
+    }
+
+    1%{
+        width: 110px;
+    }
+    99.9%{
+
+    }
+    100%{
+        
+    }
+}
+
+@keyframes escrita3{
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+    99.9%{
+        border-right: 2px solid green ;
+    }
+    100%{
+        opacity: 1;
+        border:none;
     }
 }

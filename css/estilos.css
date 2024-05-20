@@ -85,12 +85,27 @@ body{
     /* border: 1px solid red; */
 }
 
-#inicio-texto{
-    border-right: 2px solid green;
+#inicio-texto1{
     white-space: nowrap;
     overflow-x: hidden;
 
-    animation: pulsar 0.8s steps(26) infinite normal, escrita 2.1s steps(26) 1s normal;
+    animation: pulsar 1s  steps(22) infinite normal,
+    escrita1 2s steps(22) normal;
+}
+#inicio-texto2{
+    white-space: nowrap;
+    overflow-x: hidden;
+    opacity: 0;
+
+    animation: pulsar 1s 2s steps(14) infinite normal,
+    escrita2 1.4s 2s steps(14) normal;
+}
+#inicio-texto3{
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    animation: pulsar 1s 3.4s steps(14) infinite normal,
+    escrita2 1.4s 3.4s steps(14) normal;
 }
 
 
