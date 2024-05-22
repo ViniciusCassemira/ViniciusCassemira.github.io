@@ -1,5 +1,4 @@
 @keyframes pulsar{
-    
     50%{
         border-color: transparent;
     }
@@ -57,5 +56,11 @@
     }
     to{
         transform: translateX(-100%);
+    }
+}
+
+@keyframes barra-digitar{
+    50%{
+        color: transparent;
     }
 }

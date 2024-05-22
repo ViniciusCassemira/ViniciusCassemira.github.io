@@ -10,7 +10,7 @@ a{
 
 @font-face{
     font-family: 'Raster';
-    src: url(/ViniciusCassemira.github.io/assets/fontes/raster.ttf);
+    src: url(/assets/fontes/raster.ttf);
 
 }
 @font-face{
@@ -27,6 +27,11 @@ body{
     color: white;
 }
 
+/* efeito de animação piscando */
+.barra-digitar{
+    animation: barra-digitar 1.3s infinite linear;
+}
+
 .cabecalho{
     display: flex;
     align-items: center;
@@ -34,6 +39,7 @@ body{
     height: 65px;
     width: 100%;
     position: fixed;
+    color: white;
 
     font-family: raster;
     font-size: 18px;
@@ -43,28 +49,28 @@ body{
     z-index: 1;
 }
 
-.cabecalho-logo img{
-    width: 200px;
-    border-radius: 5px;
-    margin-left: 40px;
+#cabecalho-logo{
+    color: white;
+    margin-left: 60px;
 }
+
 .cabecalho-item{
     display: flex;
     gap: 40px;
-    margin-right: 40px;
+    margin-right: 60px;
 }
 .cabecalho-item a{
-    /* font-family: segoe ui bold; */
     color: white;
     padding: 1px;
-    transition: 0.2s;
 }
-.cabecalho-item a:hover{
-    /* font-family: segoe ui bold; */
-    color: purple;
-    transition: 0.2s;
-    border-bottom: 1px solid purple;
-    padding: 1px;
+
+.cabecalho-seta{
+    opacity: 0;
+}
+
+
+.cabecalho-item a:hover .cabecalho-seta{
+    opacity: 1;
 }
 
 #inicio{
@@ -169,14 +175,14 @@ body{
 
 
 #habilidades{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color:green;
-    height: 180px;
+    height: 80px;
 }
 
 .slide{
     overflow: hidden;
-    padding: 40px 0;
+    padding: 10px 0;
     white-space: nowrap;
 }
 
@@ -185,14 +191,13 @@ body{
 }
 
 .slide-grupo{
-    animation: carrosel 12s infinite linear;
+    animation: carrosel 15s infinite linear;
     display: inline-block;
 }
 
-
 .slide-imagem{
-    height: 80px;
-    margin: 0px 140px;
+    height: 60px;
+    margin: 0px 100px;
 }
 
 #meus-projetos{
@@ -216,17 +221,17 @@ body{
     width: 390px;
 
     border: 2px solid white;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     background-color:rgba(209, 209, 209, 0.76);
     text-align: center;
     font-family: raster;
 
     scale: 1.0;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .meus-projetos-projeto:hover{
-    scale: 1.02;
-    transition: 0.5s;
+    scale: 1.015;
+    transition: 0.3s;
 }
 
 .meus-projetos-projeto a{
@@ -235,6 +240,7 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 7%;
+    color: white;
 }
 
 
@@ -242,7 +248,7 @@ body{
     margin-top: 0%;
     height: 210px;
     width: 386px;
-    border-radius: 8px 8px 0px 0px;
+    /* border-radius: 8px 8px 0px 0px; */
 }
 
 .meus-projetos-subtitulo{
@@ -278,12 +284,12 @@ video{
 }*/
 
 #contato{
-    height:600px; 
+    height:400px; 
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 8%;
+    gap: 12%;
 }
 #contato h2{
     text-align: center;
@@ -297,29 +303,32 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 14%;
+    gap: 12%;
 }
 
+.contato-elemento a img{
+    height: 160px;
+}
 
-#contato-grupo p{
+.contato-elemento a p{
     font-family: raster;
-    font-size: 16px;
+    font-size: 21px;
     margin: 2px;
-    color: purple;
+    color: rgb(0, 0, 0);
 }
 
 
-#contato div{
+.contato-elemento{
     background-color: rgba(209, 209, 209, 0.76);
-    border-radius: 10px;
-    border: 2px solid rgb(116, 116, 116);
+    /* border-radius: 10px; */
+    border: 2px solid rgb(65, 65, 65);
     text-align:center;
 
     scale: 1.00;
     transition: 0.3s;
 }
 #contato div:hover{
-    scale: 1.04;
+    scale: 1.02;
     transition: 0.3s;
 }
 
@@ -348,10 +357,16 @@ video{
     height: max-content;
 
     background-color: rgb(18, 18, 18);
-    border: 2px solid green;
-    border-radius: 10px 30px;
-    margin: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    /* border-radius: 15px 30px; */
+    margin: 15px  30px;
 }
+
+#sobre-a-fatec div a{
+    color: white;
+    text-decoration: underline;
+}
+
 #sobre-a-fatec p{
     margin: 8px;
     font-family: Raster;
