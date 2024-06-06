@@ -1,0 +1,47 @@
+#contato{
+    height:500px; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12%;
+}
+#contato h2{
+    text-align: center;
+    color: green;
+
+    font-family: raster;
+    font-size: 27px;
+}
+
+#contato-grupo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+}
+
+.contato-elemento a img{
+    height: 160px;
+}
+
+.contato-elemento a p{
+    font-family: raster;
+    font-size: 21px;
+    margin: 2px;
+    color: rgb(0, 0, 0);
+}
+
+
+.contato-elemento{
+    background-color: rgba(209, 209, 209, 0.76);
+    border: 2px solid rgb(65, 65, 65);
+    text-align:center;
+
+    scale: 1.00;
+    transition: 0.3s;
+}
+#contato div:hover{
+    scale: 1.02;
+    transition: 0.3s;
+}

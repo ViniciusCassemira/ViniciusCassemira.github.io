@@ -1,0 +1,62 @@
+#inicio{
+    padding-top: 65px;
+    height: 800px;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: green;
+
+    font-family: raster;
+    font-size: 40px;
+
+    /* border: 1px solid red; */
+}
+
+#inicio-texto1{
+    width: 250px;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    animation: pulsar 1s  steps(22) infinite normal,
+    escrita1 2s steps(22) normal;
+}
+#inicio-texto2{
+    width: 130px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    opacity: 0;
+
+    animation: pulsar 1s 2s steps(14) infinite normal,
+    escrita2 1.4s 2.2s steps(14) normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+#inicio-texto3{
+    opacity: 0;
+    width: 150px;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    animation: pulsar 1s 3.4s step-end infinite alternate,
+    escrita3 1.4s 3.6s steps(14)normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+#video-inicio{
+    z-index: -1;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: 1px;
+    opacity: .3;
+    scale: 1.2; /*aumentar o tamanho do vídeo*/
+    margin-left: 15%; /*centralizar um pouco o video*/
+    margin-top:5%;/*centralizar um pouco o vídeo*/
+}
