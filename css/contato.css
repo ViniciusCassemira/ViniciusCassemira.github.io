@@ -1,10 +1,10 @@
 #contato{
-    height:500px; 
-    background-color: white;
+    height:180px; 
+    background-color: white;    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 12%;
+    gap: 20%;
 }
 #contato h2{
     text-align: center;
@@ -16,23 +16,11 @@
 
 #contato-grupo{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 12%;
+    gap: 1%;
 }
-
-.contato-elemento a img{
-    height: 160px;
-}
-
-.contato-elemento a p{
-    font-family: raster;
-    font-size: 21px;
-    margin: 2px;
-    color: rgb(0, 0, 0);
-}
-
-
 .contato-elemento{
     background-color: rgba(209, 209, 209, 0.76);
     border: 2px solid rgb(65, 65, 65);
@@ -44,4 +32,17 @@
 #contato div:hover{
     scale: 1.02;
     transition: 0.3s;
+}
+
+.contato-elemento a{
+ display: flex;
+}
+.contato-elemento a img{
+    height: 34px;
+}
+.contato-elemento a p{
+    font-family: raster;
+    font-size: 21px;
+    margin: 2px;
+    color: rgb(0, 0, 0);
 }

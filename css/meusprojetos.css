@@ -19,7 +19,6 @@
     width: 390px;
 
     border: 2px solid white;
-    /* border-radius: 8px; */
     background-color:rgba(209, 209, 209, 0.76);
     text-align: center;
     font-family: raster;
@@ -60,7 +59,7 @@
     text-align: center;
 }
 
-video{
+/* video{
     position: relative;
     overflow: hidden;
     width: auto;
@@ -75,7 +74,7 @@ video{
     opacity: 0.2;
     scale: 1.05;
 
-    /* filter: blur(0.5px);
+    filter: blur(0.5px);
     -webkit-filter: blur(0.5px);
-    -moz-filter: blur(0.5px); */
-}
+    -moz-filter: blur(0.5px);
+} */
