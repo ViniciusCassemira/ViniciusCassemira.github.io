@@ -28,7 +28,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 65px;
+    height: 50px;
     width: 100%;
     position: fixed;
     color: white;
@@ -43,13 +43,13 @@ body{
 
 #cabecalho-logo{
     color: white;
-    margin-left: 60px;
+    margin-left: 5%;
 }
 
 .cabecalho-item{
     display: flex;
     gap: 40px;
-    margin-right: 60px;
+    margin-right: 5%;
 }
 .cabecalho-item a{
     color: white;
@@ -66,4 +66,5 @@ body{
 
 footer{
     text-align: center;
+    font-family: raster;
 }
