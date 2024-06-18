@@ -49,14 +49,13 @@
 
 #video-inicio{
     z-index: -1;
-    /* position: fixed; */
     position: absolute;
     min-width: 100%;
     height:100%;
     min-height: 100%;
     width: 1px;
     opacity: .2;
-    scale: 1.3; /*aumentar o tamanho do vídeo*/
+    scale: 1.13; /*aumentar o tamanho do vídeo*/
     margin-left: 0%; /*centralizar um pouco o video*/
-    margin-top:6%;/*centralizar um pouco o vídeo*/
+    margin-top: 6%;/*centralizar um pouco o vídeo*/
 }
